@@ -6,4 +6,4 @@ Currently, the program is only suited for http-form-post attacks and I have been
 The program is a wrapper so it requires hydra and of course Python to be preinstalled.
 
 Run the program on the command line 
-> Python HydraAutomation.py URLOrIPAdress
+> Python HydraAutomation.py URLOrIPAddress
