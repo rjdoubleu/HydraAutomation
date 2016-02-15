@@ -6,11 +6,12 @@ Currently, the program is only suited for http-form-post attacks and I have been
 The program is a wrapper so it requires hydra and of course Python to be preinstalled.
 
 Run the program on the command line 
->>Python HydraAutomation.py URLOrIPAddress
+>Python HydraAutomation.py URLOrIPAddress
 
 Example:
 
->>Python HydraAutomation.py http://localhost/DVWA-1.0.8/login.php
+>Python HydraAutomation.py http://localhost/DVWA-1.0.8/login.php
+>
 >--------------------------------------------
 >HYDRA COMMAND AUTOMATER RESULTS:
 >"login.php:
