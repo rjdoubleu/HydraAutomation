@@ -8,7 +8,9 @@ The program is a wrapper so it requires hydra and of course Python to be preinst
 Run the program on the command line 
 > Python HydraAutomation.py URLOrIPAddress
 
-The output will be printed in command interface and should look like this when run against 'http://localhost/DVWA-1.0.8/login.php' :
+Example:
+
+> Python HydraAutomation.py http://localhost/DVWA-1.0.8/login.php
 >--------------------------------------------
 >HYDRA COMMAND AUTOMATER RESULTS:
 >"login.php:
