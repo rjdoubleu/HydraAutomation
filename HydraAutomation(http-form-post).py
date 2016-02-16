@@ -67,6 +67,14 @@ for i in xrange(len(x)):
 	if x[i] != y[i]: 
 		break
 ERROR = ':' + str(find_between(y[i:], '>', '<')) + '"'
-#RUN = 'hydra ' + URL + ' http-form-post ' + ACTION + USER + '&' + PASS + ERROR + ' -L user.txt -P pass.txt -t 10'
-#print "--------------------------------------------" + '\n' + 'HYDRA COMMAND AUTOMATER RESULTS:' + '\n' + ACTION + '\n' + USER + '\n' + PASS + '\n' + ERROR + '\n\n' + RUN
+
+if URL.find('http://') != -1:
+	URL = 'www.' + URL[7:]
+if URL.find('https://') != -1:
+	URL = 'www.' + URL[8:]
+if URL.find('/') != -1:
+	URL = URL[:URL.find('/')]
+	
+	
 print 'USERNAME VARIABLE = ' + U + '\n' + 'PASSWORD VARIABLE = ' + P + '\n' + 'METHOD VALUE = ' + ACTION  + '\n' + 'FAILURE RESPONSE = ' + ERROR
+print 'hydra -l someUser -p somePass ' + URL + ' http-form-post ' + ACTION + USER + '&' + PASS + ERROR
