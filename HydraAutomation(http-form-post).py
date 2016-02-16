@@ -65,5 +65,6 @@ for i in xrange(len(x)):
 	if x[i] != y[i]: 
 		break
 ERROR = ':' + str(find_between(y[i:], '>', '<')) + '"'
-RUN = 'hydra ' + URL + ' http-form-post ' + ACTION + USER + '&' + PASS + ERROR + ' -L user.txt -P pass.txt -t 10'
-print "--------------------------------------------" + '\n' + 'HYDRA COMMAND AUTOMATER RESULTS:' + '\n' + ACTION + '\n' + USER + '\n' + PASS + '\n' + ERROR + '\n\n' + RUN
+#RUN = 'hydra ' + URL + ' http-form-post ' + ACTION + USER + '&' + PASS + ERROR + ' -L user.txt -P pass.txt -t 10'
+#print "--------------------------------------------" + '\n' + 'HYDRA COMMAND AUTOMATER RESULTS:' + '\n' + ACTION + '\n' + USER + '\n' + PASS + '\n' + ERROR + '\n\n' + RUN
+print 'USERNAME VARIABLE = ' + U + '\' + 'PASSWORD VARIABLE = ' + P + '\n' + 'METHOD VALUE = ' + ERROR
