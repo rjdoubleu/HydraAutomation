@@ -47,6 +47,8 @@ actionIndex = 'action=' + '"'
 line = (find_between_r(source, formIndex, passIndex))
 name = (find_between(line, actionIndex,'"'))
 ACTION = '"' + name + ':'
+if ACTION[1] != '/' :
+	ACTION = ACTION[:1] + '/' + ACTION[1:]
 
 browser = mechanize.Browser()
 browser.set_handle_robots(False)
